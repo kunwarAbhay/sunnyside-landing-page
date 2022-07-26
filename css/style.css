@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+ =================
+  GENERAL STYLES
+ =================
+*/
+
+body {
+  color: hsl(212, 27%, 19%);
+  font-family: "Barlow", sans-serif;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: min(140rem, 100%);
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* SCROBAR STYLES */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d7d7d7;
+  border-radius: 20px;
+}
+
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+/*
+ =================
+  HERO SECTION
+ =================
+*/
+
+.section-hero {
+  position: relative;
+  min-height: clamp(70rem, 100vh, 80rem);
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3.2rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(210, 4%, 67%);
+}
+
+.btn-mobile-nav {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: block;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces";
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  padding: 1.2rem 2.4rem;
+  background-color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  color: #fff;
+  background-color: rgba(160, 221, 245, 0.849);
+}
+
+.hero-heading {
+  color: #fff;
+  font-family: "Fraunces";
+  font-size: 6.2rem;
+  font-weight: 900;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 9.6rem;
+}
+
+.icon-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+ =================
+  FEATURE SECTION
+ =================
+*/
+
+.section-features {
+  /* NOTHING HERE 😐 */
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.feature-img-box img {
+  width: 100%;
+}
+
+.feature-text-box {
+  padding: 0rem 6.4rem;
+}
+
+.feature-title {
+  font-family: "Fraunces";
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 3.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+.learn-more:link,
+.learn-more:visited {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces";
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.learn-more:hover,
+.learn-more:active {
+  color: hsl(232, 10%, 55%);
+}
+
+.color--1-underline {
+  text-decoration: underline 4px hsl(7, 99%, 70%);
+}
+
+.color--1-underline:hover {
+  text-decoration: underline 4px hsla(7, 99%, 70%, 0.6);
+}
+
+.color--2-underline {
+  text-decoration: underline 4px hsl(51, 100%, 49%);
+}
+
+.color--2-underline:hover {
+  text-decoration: underline 4px hsla(51, 100%, 49%, 0.6);
+}
+
+/* SPECIAL FEATURE */
+.special-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.special-feature {
+  position: relative;
+}
+
+.special-feature-img-box img {
+  width: 100%;
+}
+
+.special-feature-text-box {
+  position: absolute;
+  bottom: 3rem;
+  left: 3.2rem;
+  right: 3.2rem;
+  text-align: center;
+}
+
+.special-feature-title {
+  font-family: "Fraunces";
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3.6rem;
+}
+
+.special-feature-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/*
+ ======================
+  TESTIMONIAL SECTION
+ ======================
+*/
+
+.section-testimonials {
+  padding: 12rem 0;
+}
+
+.testimonials-heading {
+  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+  padding: 0 2.4rem;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-photo {
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: 3.6rem;
+}
+
+.testimonial-text {
+  color: hsl(232, 10%, 55%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.testimonial-author--name {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces";
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.testimonial-author--occupation {
+  color: hsl(210, 4%, 67%);
+  font-size: 1.4rem;
+}
+
+/*
+ ======================
+  GALLERY SECTION
+ ======================
+*/
+
+.section-gallery {
+  /* NOTHING HERE 🙂 */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+/*
+ ======================
+  FOOTER SECTION
+ ======================
+*/
+
+.section-footer {
+  padding: 8rem 2.4rem;
+  background-color: hsla(168, 72%, 65%, 0.753);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 4.8rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 4.8rem;
+
+  font-size: 1.8rem;
+  margin-bottom: 6.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: hsl(168, 34%, 41%);
+  font-weight: 600;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  gap: 2.4rem;
+}
